@@ -35,9 +35,10 @@ public class MainActivity extends Activity {
 		// Handle action bar item clicks here. The action bar will
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+		switch(item.getItemId()){
+		case R.id.action_save:
+			//•Û‘¶ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
+			view.saveToFile();
 		}
 		return super.onOptionsItemSelected(item);
 	}
