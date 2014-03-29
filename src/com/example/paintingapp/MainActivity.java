@@ -39,6 +39,10 @@ public class MainActivity extends Activity {
 		case R.id.action_save:
 			//•Û‘¶ƒ{ƒ^ƒ“‚ð‰Ÿ‚µ‚½‚Æ‚«
 			view.saveToFile();
+			return true;
+		case R.id.action_clean:
+			view.canvasint();
+			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}

@@ -10,6 +10,7 @@ import android.graphics.Bitmap.CompressFormat;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PorterDuff.Mode;
 import android.os.Environment;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -95,5 +96,9 @@ public class TouchPaintView extends View {
 		String state = Environment.getExternalStorageState();
 		return Environment.MEDIA_MOUNTED.equals(state);
 	}
-	
+	public void canvasint(){
+		canvas.drawColor(0, Mode.CLEAR);
+		invalidate();
+		
+	}
 }
